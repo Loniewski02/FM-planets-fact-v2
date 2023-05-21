@@ -194,7 +194,7 @@ const changeAnimation = () => {
 	});
 	gsap.to('.planet__imgs', {
 		duration: 1,
-		delay: 1.5,
+		delay: 1.7,
 		rotation: '720deg',
 		scale: 1,
 	});

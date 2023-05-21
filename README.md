@@ -1,4 +1,4 @@
-# Frontend Mentor - Planets fact site solution
+# Frontend Mentor - Planets fact site solution (v2)
 
 This is a solution to the [Planets fact site challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/planets-fact-site-gazqN8w_f). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution](https://github.com/Loniewski02/FM-planets-fact-v2)
+- Solution URL: [solution](https://www.frontendmentor.io/solutions/planets-fact-site-v2-vfBPWF8Nwm)
 - Live Site URL: [live](https://loniewski02.github.io/FM-planets-fact-v2/)
 
 ## My process
