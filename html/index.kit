@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="planets facts">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;700&family=League+Spartan:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="./dist/img/icons/favicon-32x32.png">
+    <link rel="stylesheet" href="./dist/css/style.min.css">
+
+    <title>Frontend Mentor | Planets fact site</title>
+</head>
+
+<body>
+    <!-- @include 'nav.kit' -->
+    <main class="main">
+        <div class="hero-bg"></div>
+        <section class="planet planet-earth">
+            <div class="wrapper">
+                <div class="mobile-btns-panel">
+                    <button class="mobile-btns-panel__btn mobile-btns-panel__btn--active overview-btn">overview</button>
+                    <button class="mobile-btns-panel__btn structure-btn">structure</button>
+                    <button class="mobile-btns-panel__btn geology-btn">surface</button>
+                    <div class="border"></div>
+                </div>
+                <div class="planet__imgs planet__imgs--earth">
+                    <img class="planet__imgs-img planet__imgs-img--first" src="./dist/img/icons/planet-earth.svg"
+                        alt="">
+                    <img class="planet__imgs-img planet__imgs-img--second"
+                        src="./dist/img/icons/planet-earth-internal.svg" alt="">
+                    <img class="planet__imgs-img planet__imgs-img--popup" src="./dist/img/icons/geology-earth.png"
+                        alt="">
+                </div>
+                <div class="planet__main">
+                    <div class="planet__info">
+                        <h2 class="planet__info-title">earth</h2>
+                        <p class="planet__info-text">Third planet from the Sun and the only known planet to harbor life.
+                            About 29.2% of Earth's surface is land with remaining 70.8% is covered with water. Earth's
+                            distance from the Sun, physical properties and geological history have allowed life to
+                            evolve and thrive.</p>
+                        <p class="planet__info-source">Source: <a href="https://en.wikipedia.org/wiki/Earth"
+                                target="_blank" rel="noopener noreferrer">Wikipedia</a> <img
+                                src="./dist/img/icons/icon-source.svg" alt=""></p>
+                    </div>
+                    <div class="planet__btns-panel">
+                        <button
+                            class="planet__btns-panel-btn overview-btn planet__btns-panel-btn--active"><span>01</span>overview</button>
+                        <button class="planet__btns-panel-btn structure-btn"><span>02</span>Internal
+                            structure</button>
+                        <button class="planet__btns-panel-btn geology-btn"><span>03</span>surface
+                            geology</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- @include 'footer.kit' -->
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.11/dist/gsap.min.js"></script>
+    <script src="./dist/js/main.min.js"></script>
+</body>
+
+</html>

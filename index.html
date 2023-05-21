@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="planets facts">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;700&family=League+Spartan:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="./dist/img/icons/favicon-32x32.png">
+    <link rel="stylesheet" href="./dist/css/style.min.css">
+
+    <title>Frontend Mentor | Planets fact site</title>
+</head>
+
+<body>
+    <nav class="nav">
+    <div class="wrapper">
+        <h2 class="nav__title">the planets</h2>
+        <button class=" nav__burger-btn">
+            <div class="nav__burger-btn-box">
+                <div class="nav__burger-btn-bars nav__burger-btn-bars--top"></div>
+                <div class="nav__burger-btn-bars nav__burger-btn-bars--middle"></div>
+                <div class="nav__burger-btn-bars nav__burger-btn-bars--bottom"></div>
+            </div>
+        </button>
+        <div class="nav__items">
+            <span tabindex="0" data-index="0" class="nav__items-item nav__items-item--mercury">
+                <span class="circle circle--mercury"></span>mercury <img src="./dist/img/icons/icon-chevron.svg" alt="">
+            </span>
+            <span tabindex="0" data-index="1" class="nav__items-item nav__items-item--venus">
+                <span class="circle circle--venus"></span>venus <img src="./dist/img/icons/icon-chevron.svg" alt="">
+            </span>
+            <span tabindex="0" data-index="2" class="nav__items-item nav__items-item--earth nav__items-item--active">
+                <span class="circle circle--earth"></span>earth <img src="./dist/img/icons/icon-chevron.svg" alt="">
+            </span>
+            <span tabindex="0" data-index="3" class="nav__items-item nav__items-item--mars">
+                <span class="circle circle--mars"></span>mars <img src="./dist/img/icons/icon-chevron.svg" alt="">
+            </span>
+            <span tabindex="0" data-index="4" class="nav__items-item nav__items-item--jupiter">
+                <span class="circle circle--jupiter"></span>jupiter <img src="./dist/img/icons/icon-chevron.svg" alt="">
+            </span>
+            <span tabindex="0" data-index="5" class="nav__items-item nav__items-item--saturn">
+                <span class="circle circle--saturn"></span>saturn <img src="./dist/img/icons/icon-chevron.svg" alt="">
+            </span>
+            <span tabindex="0" data-index="6" class="nav__items-item nav__items-item--uranus">
+                <span class="circle circle--uranus"></span>uranus <img src="./dist/img/icons/icon-chevron.svg" alt="">
+            </span>
+            <span tabindex="0" data-index="7" class="nav__items-item nav__items-item--neptune">
+                <span class="circle circle--neptune"></span>neptune <img src="./dist/img/icons/icon-chevron.svg" alt="">
+            </span>
+        </div>
+    </div>
+    <div class="border"></div>
+</nav>
+    <main class="main">
+        <div class="hero-bg"></div>
+        <section class="planet planet-earth">
+            <div class="wrapper">
+                <div class="mobile-btns-panel">
+                    <button class="mobile-btns-panel__btn mobile-btns-panel__btn--active overview-btn">overview</button>
+                    <button class="mobile-btns-panel__btn structure-btn">structure</button>
+                    <button class="mobile-btns-panel__btn geology-btn">surface</button>
+                    <div class="border"></div>
+                </div>
+                <div class="planet__imgs planet__imgs--earth">
+                    <img class="planet__imgs-img planet__imgs-img--first" src="./dist/img/icons/planet-earth.svg"
+                        alt="">
+                    <img class="planet__imgs-img planet__imgs-img--second"
+                        src="./dist/img/icons/planet-earth-internal.svg" alt="">
+                    <img class="planet__imgs-img planet__imgs-img--popup" src="./dist/img/icons/geology-earth.png"
+                        alt="">
+                </div>
+                <div class="planet__main">
+                    <div class="planet__info">
+                        <h2 class="planet__info-title">earth</h2>
+                        <p class="planet__info-text">Third planet from the Sun and the only known planet to harbor life.
+                            About 29.2% of Earth's surface is land with remaining 70.8% is covered with water. Earth's
+                            distance from the Sun, physical properties and geological history have allowed life to
+                            evolve and thrive.</p>
+                        <p class="planet__info-source">Source: <a href="https://en.wikipedia.org/wiki/Earth"
+                                target="_blank" rel="noopener noreferrer">Wikipedia</a> <img
+                                src="./dist/img/icons/icon-source.svg" alt=""></p>
+                    </div>
+                    <div class="planet__btns-panel">
+                        <button
+                            class="planet__btns-panel-btn overview-btn planet__btns-panel-btn--active"><span>01</span>overview</button>
+                        <button class="planet__btns-panel-btn structure-btn"><span>02</span>Internal
+                            structure</button>
+                        <button class="planet__btns-panel-btn geology-btn"><span>03</span>surface
+                            geology</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+    <div class="wrapper">
+        <div class="footer__box">
+            <span class="footer__box-title">rotation time</span>
+            <p class="footer__box-data rotation">0.99 DAYS</p>
+        </div>
+        <div class="footer__box">
+            <span class="footer__box-title">revolution time</span>
+            <p class="footer__box-data revolution">365.26 DAYS
+
+            </p>
+        </div>
+        <div class="footer__box">
+            <span class="footer__box-title">radius</span>
+            <p class="footer__box-data radius">6,371 KM</p>
+        </div>
+        <div class="footer__box">
+            <span class="footer__box-title">average temp.</span>
+            <p class="footer__box-data temp">16°C</p>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.11/dist/gsap.min.js"></script>
+    <script src="./dist/js/main.min.js"></script>
+</body>
+
+</html>
